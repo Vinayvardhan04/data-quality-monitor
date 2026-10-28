@@ -1,0 +1,9 @@
+{
+  "columns": {
+    "order_id": {"type": "string", "required": true, "unique": true},
+    "order_date": {"type": "date", "required": true},
+    "amount": {"type": "number", "required": true, "minimum": 0},
+    "status": {"type": "string", "required": true, "accepted_values": ["placed", "shipped", "completed"]}
+  },
+  "freshness": {"column": "order_date", "max_age_days": 30}
+}
