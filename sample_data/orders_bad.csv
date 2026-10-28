@@ -1,0 +1,4 @@
+order_id,order_date,amount,status
+A-100,2026-10-27,49.95,placed
+A-100,2026-10-28,bad-value,returned
+A-102,,11.50,completed
